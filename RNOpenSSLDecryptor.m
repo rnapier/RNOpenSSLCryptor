@@ -137,6 +137,7 @@
                                                         code:kRNCryptorUnknownHeader
                                                     userInfo:[NSDictionary dictionaryWithObject:@"Unknown header" /* DNL */
                                                                                          forKey:NSLocalizedDescriptionKey]]];
+    return;
   }
 
   NSData *salt = [data _RNConsumeToIndex:settings.keySettings.saltSize];
